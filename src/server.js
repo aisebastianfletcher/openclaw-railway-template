@@ -768,7 +768,7 @@ app.post("/setup/api/run", requireSetupAuth, async (req, res) => {
           dmPolicy: "pairing",
           botToken: payload.telegramToken.trim(),
           groupPolicy: "allowlist",
-          streamMode: "partial",
+          streamMode: "full",
         });
       }
 
